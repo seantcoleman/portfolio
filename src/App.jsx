@@ -73,13 +73,16 @@ function HeroSection() {
 function AboutSection() {
   const skills = [
     "React",
-    "Next.js",
-    "Tailwind CSS",
+    "Electron",
     "JavaScript",
-    "TypeScript",
-    "Node.js",
-    "MongoDB",
-    "PostgreSQL",
+    "CSS",
+    "HTML",
+    "Tailwind CSS",
+    "WordPress",
+    "Supabase",
+    "SEO",
+    "AI Tools",
+    "Project Management",
   ];
 
   return (
@@ -109,7 +112,7 @@ function AboutSection() {
               </p>
               <p className="text-lg mb-8 text-gray-700 dark:text-gray-300 leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or enjoying a good cup of
+                making music, traveling, hiking, or enjoying a good cup of
                 coffee while sketching out my next big idea.
               </p>
               <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
@@ -140,37 +143,29 @@ function AboutSection() {
 function ProjectsSection() {
   const projects = [
     {
-      title: "TuneTasker.com",
+      title: "TuneTasker",
       description:
-        "A comprehensive task management and productivity platform with music integration for enhanced focus",
-      tech: ["React", "Node.js", "MongoDB"],
+        "A comprehensive desktop task management and productivity platform with music integration for enhanced focus",
+      tech: ["Electron", "React", "Supabase"],
       color: "from-purple-500 to-pink-500",
       github: "https://github.com/seantcoleman/tunetasker",
       live: "https://tunetasker.com",
     },
     {
-      title: "Calculator",
+      title: "Web Production Manager",
       description:
-        "A responsive calculator application made with CSS Grid and JavaScript with clean UI design",
-      tech: ["JavaScript", "CSS Grid", "HTML"],
-      color: "from-blue-400 to-indigo-500",
-      github: "https://github.com/seantcoleman/Calculator",
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "Check out my site! A personal portfolio showcasing my web development projects and skills",
-      tech: ["HTML", "CSS", "JavaScript"],
+        "Currently managing digital production workflows, coordinating cross-functional teams, and ensuring high-quality deliverables across web projects",
+      tech: ["Project Management", "Team Leadership"],
       color: "from-green-400 to-blue-500",
-      github: "https://github.com/seantcoleman/portfolio",
+      github: null,
     },
     {
-      title: "Resume Template",
+      title: "Password Generator",
       description:
-        "A professional resume template made with CSS Grid for clean, responsive layout design",
-      tech: ["CSS Grid", "HTML", "Responsive Design"],
-      color: "from-yellow-400 to-orange-500",
-      github: "https://github.com/seantcoleman/Resume",
+        "A secure password generator application that creates random, strong passwords with customizable options",
+      tech: ["JavaScript", "CSS", "HTML"],
+      color: "from-blue-400 to-indigo-500",
+      github: "https://github.com/seantcoleman/Password-Generator",
     },
     {
       title: "Chester Creek Trail",
@@ -189,13 +184,13 @@ function ProjectsSection() {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4 text-center text-gray-900 dark:text-white">
-          My Projects
+          Experience & Projects
         </h2>
         <p className="text-lg text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects that showcase my skills and
-          passion for web development
+          Here are some of my recent work experiences and projects that showcase
+          my skills and passion for web development
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.title}
