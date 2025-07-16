@@ -166,6 +166,7 @@ function ProjectsSection() {
       tech: ["JavaScript", "CSS", "HTML"],
       color: "from-blue-400 to-indigo-500",
       github: "https://github.com/seantcoleman/Password-Generator",
+      live: "https://seantcoleman.github.io/Password-Generator",
     },
     {
       title: "Chester Creek Trail",
