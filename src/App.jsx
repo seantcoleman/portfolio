@@ -94,27 +94,33 @@ function AboutSection() {
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">
           About Me
         </h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full mx-auto mb-8 flex items-center justify-center">
-                <div className="w-72 h-72 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
-                  <div className="text-6xl">👨‍💻</div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            {/* Avatar Section */}
+            <div className="lg:col-span-1 flex justify-center">
+              <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-xl">
+                <div className="w-56 h-56 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
+                  <div className="text-5xl">👨‍💻</div>
                 </div>
               </div>
             </div>
-            <div>
-              <p className="text-lg mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">
-                I'm a passionate web developer with a keen eye for design and a
-                love for creating seamless user experiences. With a strong
-                foundation in modern web technologies, I bring ideas to life
-                through clean, efficient code and intuitive interfaces.
-              </p>
-              <p className="text-lg mb-8 text-gray-700 dark:text-gray-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies,
-                making music, traveling, hiking, or enjoying a good cup of
-                coffee while sketching out my next big idea.
-              </p>
+
+            {/* Content Section */}
+            <div className="lg:col-span-2">
+              <div className="mb-8">
+                <p className="text-lg mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+                  I'm a passionate web developer with a keen eye for design and
+                  a love for creating seamless user experiences. With a strong
+                  foundation in modern web technologies, I bring ideas to life
+                  through clean, efficient code and intuitive interfaces.
+                </p>
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  When I'm not coding, you'll find me exploring new
+                  technologies, making music, traveling, hiking, or enjoying a
+                  good cup of coffee while sketching out my next big idea.
+                </p>
+              </div>
+
               <h3 className="text-2xl font-semibold mb-6 text-gray-900 dark:text-white">
                 My Skills
               </h3>
