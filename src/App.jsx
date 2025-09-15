@@ -100,7 +100,7 @@ function AboutSection() {
             <div className="lg:col-span-1 flex justify-center">
               <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-xl">
                 <div className="w-56 h-56 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
-                  <div className="text-5xl">👨‍💻</div>
+                  <div className="text-8xl">👨‍💻</div>
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@ function ProjectsSection() {
       title: "TuneTasker",
       description:
         "A comprehensive desktop task management and productivity platform with music integration for enhanced focus",
-      tech: ["Electron", "React", "Supabase"],
+      tech: ["Electron", "React", "Tailwind CSS", "Supabase"],
       color: "from-purple-500 to-pink-500",
       github: "https://github.com/seantcoleman/tunetasker",
       live: "https://tunetasker.com",
@@ -161,7 +161,7 @@ function ProjectsSection() {
       title: "Web Production Manager",
       description:
         "Currently managing digital production workflows, coordinating cross-functional teams, and ensuring high-quality deliverables across web projects",
-      tech: ["Project Management", "Team Leadership"],
+      tech: ["HTML", "CSS", "SEO", "WordPress", "Team Leadership"],
       color: "from-green-400 to-blue-500",
       github: null,
     },
@@ -178,7 +178,7 @@ function ProjectsSection() {
       title: "Chester Creek Trail",
       description:
         "A WordPress website for the Chester Creek Trail community featuring trail information, events, and resources",
-      tech: ["WordPress", "PHP", "CSS"],
+      tech: ["WordPress", "CSS"],
       color: "from-green-500 to-emerald-500",
       live: "https://chestercreektrail.org",
     },
