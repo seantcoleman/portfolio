@@ -206,7 +206,7 @@ function ProjectsSection() {
           Here are some of my recent work experiences and projects that showcase
           my skills and passion for web development
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={project.title}
