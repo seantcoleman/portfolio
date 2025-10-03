@@ -182,6 +182,15 @@ function ProjectsSection() {
       color: "from-green-500 to-emerald-500",
       live: "https://chestercreektrail.org",
     },
+    {
+      title: "Quizical",
+      description:
+        "An interactive quiz application that provides engaging questions and tracks user progress with a modern, responsive design",
+      tech: ["React", "CSS"],
+      color: "from-orange-400 to-red-500",
+      github: "https://github.com/seantcoleman/Quizical",
+      live: "https://seantcoleman.github.io/Quizical/",
+    },
   ];
 
   return (
