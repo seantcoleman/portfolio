@@ -24,7 +24,7 @@ function HeroSection() {
       } else {
         clearInterval(typingEffect);
       }
-    }, 80);
+    }, 50);
 
     return () => clearInterval(typingEffect);
   }, []);
@@ -161,7 +161,14 @@ function ProjectsSection() {
       title: "Web Production Manager",
       description:
         "Currently managing digital production workflows, coordinating cross-functional teams, and ensuring high-quality deliverables across web projects",
-      tech: ["HTML", "CSS", "SEO", "WordPress", "Team Leadership"],
+      tech: [
+        "HTML",
+        "CSS",
+        "SEO",
+        "WordPress",
+        "Team Leadership",
+        "Project Management",
+      ],
       color: "from-green-400 to-blue-500",
       github: null,
     },
