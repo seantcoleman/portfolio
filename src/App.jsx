@@ -56,7 +56,7 @@ function HeroSection() {
 
         <div className="opacity-0 animate-[fadeIn_0.8s_ease-in-out_2s_forwards]">
           <p className="text-lg md:text-xl mb-10 text-slate-400 tracking-wide">
-            Web Developer&nbsp;&nbsp;·&nbsp;&nbsp;UI/UX Enthusiast&nbsp;&nbsp;·&nbsp;&nbsp;Problem Solver
+            Web Professional&nbsp;&nbsp;·&nbsp;&nbsp;UI/UX Enthusiast&nbsp;&nbsp;·&nbsp;&nbsp;Problem Solver
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -121,8 +121,8 @@ function AboutSection() {
             <div className="lg:col-span-2">
               <div className="mb-8">
                 <p className="text-lg mb-6 text-slate-300 leading-relaxed">
-                  I'm a passionate web developer with a keen eye for design and
-                  a love for creating seamless user experiences. With a strong
+                  I'm a passionate web professional with a keen eye for design and
+                  a love for creating seamless digital experiences. With a strong
                   foundation in modern web technologies, I bring ideas to life
                   through clean, efficient code and intuitive interfaces.
                 </p>
@@ -227,7 +227,7 @@ function ProjectsSection() {
         </div>
         <p className="text-base text-center text-slate-400 mb-14 max-w-2xl mx-auto">
           Here are some of my recent work experiences and projects that showcase
-          my skills and passion for web development
+          my skills and passion for web and digital production
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {projects.map((project) => (
