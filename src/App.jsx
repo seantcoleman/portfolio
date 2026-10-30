@@ -111,26 +111,28 @@ function HeroSection() {
 
       <div className="relative max-w-6xl mx-auto px-6 animate-[fadeIn_0.8s_ease-out_forwards]">
         <h1 className="font-display text-5xl md:text-7xl font-semibold text-white tracking-tight leading-[1.05] max-w-4xl">
-          Hello, I'm Sean Coleman. I create{" "}
+          I plan, build, and ship{" "}
           <span className="bg-gradient-to-r from-cyan-300 to-violet-400 bg-clip-text text-transparent">
-            amazing web experiences.
-          </span>
+            digital products
+          </span>{" "}
+          people use.
         </h1>
-        <p className="mt-8 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed tracking-wide">
-          Web Professional&nbsp;&nbsp;·&nbsp;&nbsp;UI/UX Enthusiast&nbsp;&nbsp;·&nbsp;&nbsp;Problem Solver
+        <p className="mt-8 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+          I'm Sean Coleman, a web production manager who also builds: live web
+          apps, an iOS app, and sites for real organizations.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-3">
           <a
             href="#work"
             className="inline-flex justify-center rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 px-7 py-3 font-semibold transition-colors shadow-[0_0_40px_rgba(34,211,238,0.25)]"
           >
-            View My Work
+            View my work
           </a>
           <a
             href="#contact"
             className="inline-flex justify-center rounded-full border border-white/15 hover:border-white/30 text-white px-7 py-3 font-semibold transition-colors"
           >
-            Get In Touch
+            Get in touch
           </a>
         </div>
       </div>
@@ -282,29 +284,9 @@ function AboutSection() {
           </div>
         </div>
 
-        <div className="lg:col-span-5 space-y-10">
-          <div>
-            <h3 className="text-sm font-medium text-cyan-400 mb-5">Experience</h3>
-            <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-6">
-              <div className="flex items-baseline justify-between gap-4 mb-2">
-                <h4 className="font-display text-lg font-semibold text-white">
-                  Web Production Manager
-                </h4>
-                <span className="text-xs font-medium text-emerald-400 whitespace-nowrap">
-                  Current
-                </span>
-              </div>
-              <p className="text-sm text-slate-400 leading-relaxed">
-                Managing digital production workflows, coordinating
-                cross-functional teams, and ensuring high-quality deliverables
-                across web projects.
-              </p>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium text-cyan-400 mb-5">My Skills</h3>
-            <TechList tech={skills} />
-          </div>
+        <div className="lg:col-span-5 lg:pt-16">
+          <h3 className="text-sm font-medium text-cyan-400 mb-5">My Skills</h3>
+          <TechList tech={skills} />
         </div>
       </div>
     </section>
