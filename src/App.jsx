@@ -3,16 +3,14 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 const projects = [
   {
     title: "BuzzerBidder",
-    kind: "Web app",
     description:
-      "A live ShopGoodwill auction sniper that compares items to eBay sales and places bids in the final seconds.",
+      "A last-second auction sniper for ShopGoodwill that queues bids, compares items to eBay comps, and fires in the final seconds of an auction — with a pay-on-win business model",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Python"],
     image: asset("projects/buzzerbidder.jpg"),
     live: "https://buzzerbidder.com",
   },
   {
     title: "Osci",
-    kind: "iOS app",
     description:
       "A waveform studio for creators. Design audio visualizers and export share-ready videos up to 4K from an iPhone.",
     tech: ["Swift", "SwiftUI", "AVFoundation"],
@@ -21,7 +19,6 @@ const projects = [
   },
   {
     title: "TuneTasker",
-    kind: "Desktop + web app",
     description:
       "A project manager for musicians that organizes Ableton, Pro Tools, and Logic sessions and syncs desktop with web.",
     tech: ["Electron", "React", "Tailwind CSS", "Supabase"],
@@ -31,18 +28,16 @@ const projects = [
   },
   {
     title: "Chester Creek Trail",
-    kind: "Website",
     description:
-      "WordPress site for a rail-trail community in Delaware County, PA, with trail info, events, and resources.",
+      "A WordPress website for the Chester Creek Trail community featuring trail information, events, and resources",
     tech: ["WordPress", "CSS"],
     image: asset("projects/chestercreek.jpg"),
     live: "https://chestercreektrail.org",
   },
   {
     title: "Quizical",
-    kind: "Web app",
     description:
-      "A quiz app with customizable categories, difficulty, and question types, plus score tracking.",
+      "An interactive quiz application that provides engaging questions and tracks user progress with a modern, responsive design",
     tech: ["React", "CSS"],
     image: asset("projects/quizical.jpg"),
     live: "https://seantcoleman.github.io/Quizical/",
@@ -51,18 +46,17 @@ const projects = [
 ];
 
 const skills = [
-  "Web Production",
-  "Project Management",
-  "Team Leadership",
   "React",
-  "Next.js",
+  "Electron",
   "JavaScript",
-  "HTML & CSS",
+  "CSS",
+  "HTML",
   "Tailwind CSS",
   "WordPress",
   "Supabase",
-  "Swift",
   "SEO",
+  "AI Tools",
+  "Project Management",
 ];
 
 export default function Home() {
@@ -116,33 +110,27 @@ function HeroSection() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 animate-[fadeIn_0.8s_ease-out_forwards]">
-        <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 mb-8">
-          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-          Open to new opportunities
-        </p>
         <h1 className="font-display text-5xl md:text-7xl font-semibold text-white tracking-tight leading-[1.05] max-w-4xl">
-          I plan, build, and ship{" "}
+          Hello, I'm Sean Coleman. I create{" "}
           <span className="bg-gradient-to-r from-cyan-300 to-violet-400 bg-clip-text text-transparent">
-            digital products
-          </span>{" "}
-          people use.
+            amazing web experiences.
+          </span>
         </h1>
-        <p className="mt-8 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
-          I'm Sean Coleman, a web production manager who also builds: live web
-          apps, an iOS app on the App Store, and sites for real organizations.
+        <p className="mt-8 text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed tracking-wide">
+          Web Professional&nbsp;&nbsp;·&nbsp;&nbsp;UI/UX Enthusiast&nbsp;&nbsp;·&nbsp;&nbsp;Problem Solver
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-3">
           <a
             href="#work"
             className="inline-flex justify-center rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 px-7 py-3 font-semibold transition-colors shadow-[0_0_40px_rgba(34,211,238,0.25)]"
           >
-            View my work
+            View My Work
           </a>
           <a
             href="#contact"
             className="inline-flex justify-center rounded-full border border-white/15 hover:border-white/30 text-white px-7 py-3 font-semibold transition-colors"
           >
-            Get in touch
+            Get In Touch
           </a>
         </div>
       </div>
@@ -150,10 +138,10 @@ function HeroSection() {
   );
 }
 
-function SectionHeading({ eyebrow, title, children }) {
+function SectionHeading({ title, children }) {
   return (
     <div className="mb-14 max-w-2xl">
-      <p className="text-sm font-medium text-cyan-400 mb-3">{eyebrow}</p>
+      <div className="h-px w-12 bg-cyan-400 mb-5"></div>
       <h2 className="font-display text-3xl md:text-4xl font-semibold text-white tracking-tight">
         {title}
       </h2>
@@ -187,7 +175,7 @@ function ProjectLinks({ live, github }) {
           rel="noopener noreferrer"
           className="text-cyan-400 hover:text-cyan-300 transition-colors"
         >
-          Visit site ↗
+          View Live ↗
         </a>
       )}
       {github && (
@@ -197,7 +185,7 @@ function ProjectLinks({ live, github }) {
           rel="noopener noreferrer"
           className="text-slate-400 hover:text-white transition-colors"
         >
-          GitHub ↗
+          GitHub
         </a>
       )}
     </div>
@@ -234,7 +222,10 @@ function WorkSection() {
   return (
     <section id="work" className="py-24 md:py-32 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading eyebrow="Projects" title="Things I've built and launched" />
+        <SectionHeading title="Projects">
+          Here are some of my recent projects that showcase my skills and
+          passion for web and digital production
+        </SectionHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
@@ -251,7 +242,6 @@ function WorkSection() {
                 <ProjectImage project={project} />
               </a>
               <div className="flex flex-col flex-1 p-6">
-                <p className="text-xs font-mono text-slate-500 mb-2">{project.kind}</p>
                 <h3 className="font-display text-lg font-semibold text-white mb-2">
                   {project.title}
                 </h3>
@@ -276,21 +266,18 @@ function AboutSection() {
     <section id="about" className="py-24 md:py-32 border-t border-white/5 bg-slate-900/40">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-14">
         <div className="lg:col-span-7">
-          <SectionHeading eyebrow="About" title="Production mindset, builder's hands" />
+          <SectionHeading title="About Me" />
           <div className="space-y-5 text-lg leading-relaxed text-slate-300 -mt-6">
             <p>
-              I work at the intersection of planning and making. Day to day I
-              manage web production: coordinating teams, keeping launches on
-              schedule, and making sure what ships is high quality.
+              I'm a passionate web professional with a keen eye for design and
+              a love for creating seamless digital experiences. With a strong
+              foundation in modern web technologies, I bring ideas to life
+              through clean, efficient code and intuitive interfaces.
             </p>
             <p>
-              On my own time I build products end to end, from a ShopGoodwill
-              bidding service to an iOS app for music visuals. That hands-on
-              work makes me a better partner to designers and developers.
-            </p>
-            <p className="text-slate-400">
-              Outside of work I make music, travel, hike, and drink a lot of
-              coffee.
+              When I'm not coding, you'll find me exploring new technologies,
+              making music, traveling, hiking, or enjoying a good cup of coffee
+              while sketching out my next big idea.
             </p>
           </div>
         </div>
@@ -315,7 +302,7 @@ function AboutSection() {
             </div>
           </div>
           <div>
-            <h3 className="text-sm font-medium text-cyan-400 mb-5">Skills</h3>
+            <h3 className="text-sm font-medium text-cyan-400 mb-5">My Skills</h3>
             <TechList tech={skills} />
           </div>
         </div>
@@ -332,18 +319,19 @@ function ContactSection() {
           <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
           <div className="relative max-w-2xl">
             <h2 className="font-display text-4xl md:text-5xl font-semibold text-white tracking-tight mb-5">
-              Let's work together.
+              Get In Touch
             </h2>
             <p className="text-lg text-slate-400 leading-relaxed mb-10">
-              I'm open to new roles, freelance projects, or just a conversation
-              about building for the web.
+              Have a project in mind? I'd love to hear from you. I'm always open
+              to discussing new opportunities, creative projects, or just having
+              a chat about technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="mailto:scoleman2296@gmail.com"
                 className="inline-flex justify-center rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 px-7 py-3 font-semibold transition-colors"
               >
-                scoleman2296@gmail.com
+                Send Email
               </a>
               <a
                 href="https://www.linkedin.com/in/seantcoleman/"
@@ -351,7 +339,7 @@ function ContactSection() {
                 rel="noopener noreferrer"
                 className="inline-flex justify-center rounded-full border border-white/15 hover:border-white/30 text-white px-7 py-3 font-semibold transition-colors"
               >
-                LinkedIn ↗
+                Connect on LinkedIn
               </a>
             </div>
           </div>
