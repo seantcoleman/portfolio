@@ -161,6 +161,22 @@ function AboutSection() {
 function ProjectsSection() {
   const projects = [
     {
+      title: "BuzzerBidder",
+      description:
+        "A last-second auction sniper for ShopGoodwill that queues bids, compares items to eBay comps, and fires in the final seconds of an auction — with a pay-on-win business model",
+      tech: ["Next.js", "React"],
+      color: "from-cyan-600 to-indigo-600",
+      live: "https://buzzerbidder.com",
+    },
+    {
+      title: "Osci",
+      description:
+        "A creative iOS app for generating and exploring oscillator-based sounds with an intuitive touch interface",
+      tech: ["Swift", "iOS"],
+      color: "from-fuchsia-500 to-violet-600",
+      live: "https://fuzzyloops.com/osci",
+    },
+    {
       title: "TuneTasker",
       description:
         "A comprehensive desktop task management and productivity platform with music integration for enhanced focus",
