@@ -110,6 +110,10 @@ function HeroSection() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 animate-[fadeIn_0.8s_ease-out_forwards]">
+        <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 mb-8">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+          Open to new opportunities
+        </p>
         <h1 className="font-display text-5xl md:text-7xl font-semibold text-white tracking-tight leading-[1.05] max-w-4xl">
           I plan, build, and ship{" "}
           <span className="bg-gradient-to-r from-cyan-300 to-violet-400 bg-clip-text text-transparent">
