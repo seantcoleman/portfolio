@@ -2,6 +2,19 @@ const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
 const projects = [
   {
+    title: "Web Production Manager",
+    description:
+      "Currently managing digital production workflows, coordinating cross-functional teams, and ensuring high-quality deliverables across web projects",
+    tech: [
+      "HTML",
+      "CSS",
+      "SEO",
+      "WordPress",
+      "Team Leadership",
+      "Project Management",
+    ],
+  },
+  {
     title: "BuzzerBidder",
     description:
       "A last-second auction sniper for ShopGoodwill that queues bids, compares items to eBay comps, and fires in the final seconds of an auction — with a pay-on-win business model",
@@ -24,7 +37,6 @@ const projects = [
     tech: ["Electron", "React", "Tailwind CSS", "Supabase"],
     image: asset("projects/tunetasker.jpg"),
     live: "https://tunetasker.com",
-    github: "https://github.com/seantcoleman/tunetasker",
   },
   {
     title: "Chester Creek Trail",
@@ -199,6 +211,16 @@ function ProjectLinks({ live, github }) {
 }
 
 function ProjectImage({ project }) {
+  if (!project.image && !project.images) {
+    return (
+      <div className="aspect-[16/10] flex items-end p-6 bg-gradient-to-br from-teal-500/30 via-cyan-600/15 to-slate-900">
+        <p className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-950/50 px-3 py-1 text-xs font-medium text-slate-200">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+          Current role
+        </p>
+      </div>
+    );
+  }
   if (project.images) {
     return (
       <div className="aspect-[16/10] flex justify-center gap-3 pt-5 px-6 bg-gradient-to-br from-fuchsia-600/25 via-violet-700/20 to-slate-900 overflow-hidden">
@@ -228,9 +250,9 @@ function WorkSection() {
   return (
     <section id="work" className="py-24 md:py-32 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="Projects">
-          Here are some of my recent projects that showcase my skills and
-          passion for web and digital production
+        <SectionHeading title="Experience & Projects">
+          Here are some of my recent work experiences and projects that
+          showcase my skills and passion for web and digital production
         </SectionHeading>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -239,14 +261,20 @@ function WorkSection() {
               key={project.title}
               className="group flex flex-col rounded-2xl border border-white/10 bg-slate-900/50 overflow-hidden hover:border-white/20 hover:-translate-y-1 transition-all duration-300"
             >
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block overflow-hidden border-b border-white/5"
-              >
-                <ProjectImage project={project} />
-              </a>
+              {project.live ? (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block overflow-hidden border-b border-white/5"
+                >
+                  <ProjectImage project={project} />
+                </a>
+              ) : (
+                <div className="overflow-hidden border-b border-white/5">
+                  <ProjectImage project={project} />
+                </div>
+              )}
               <div className="flex flex-col flex-1 p-6">
                 <h3 className="font-display text-lg font-semibold text-white mb-2">
                   {project.title}
